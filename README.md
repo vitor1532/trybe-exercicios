@@ -10,6 +10,6 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 - [x] 1-1: _Unix & Shell_
 - [x] 1-2: _Git_
-- [ ] 1-3: _Git & Shell_ 
+- [ ] 1-3: _Git & GitHub_ 
 
 [etc...]
