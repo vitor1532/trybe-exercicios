@@ -1,4 +1,4 @@
-# Trybe
+# Trybe Exercícios
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por Vitor Martins  enquanto estudava na [Trybe](https://www.betrybe.com/) 🚀
 
