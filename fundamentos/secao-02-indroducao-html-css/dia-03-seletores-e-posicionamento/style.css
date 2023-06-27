@@ -10,7 +10,9 @@
   }
   
   .baloon {
-    
+    position: absolute;
+    top: 220px;
+    left: 500px;
   }
   
   .speach {
@@ -23,3 +25,5 @@
     top: 370px;
     left: 800px;
   }
+
+  
