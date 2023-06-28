@@ -34,3 +34,23 @@ li em {
 .rosa {
     background-color: pink;
 }
+
+#sites li a#stack:hover {
+    color: orange;
+}
+
+#sites li a#w3:hover {
+    color: green;
+}
+
+#sites li a#mdn:hover {
+    color: black;
+}
+
+#sites li a#devdocs:hover {
+    color: silver;
+}
+
+#sites li a#trybe:hover {
+    color: green;
+}
