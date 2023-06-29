@@ -38,3 +38,7 @@ ul {
 .premiacao h3 {
   text-align: center;
 }
+
+.premiacao ul li {
+  display: inline;
+}
