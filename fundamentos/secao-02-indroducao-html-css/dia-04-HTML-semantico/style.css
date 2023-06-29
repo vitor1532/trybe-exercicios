@@ -1,7 +1,8 @@
 h1 {
   text-align: center;
 }
-.podium {
+
+ul {
   list-style: none;
   text-align: center;
 }
@@ -32,4 +33,8 @@ h1 {
   text-align: center;
   width: 300px;
   display: inline-block;
+}
+
+.premiacao h3 {
+  text-align: center;
 }
