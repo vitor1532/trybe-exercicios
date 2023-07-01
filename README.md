@@ -12,9 +12,19 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 - [x] 1-2: _Git_
 - [x] 1-3: _Git & GitHub_ 
 
-- [x] 1-1: _HTML & CSS - Estruturas de página_
-- [x] 1-2: _HTML & CSS - Primeiros passos em CSS_
-- [x] 1-3: _HTML & CSS - Seletores e posicionamento_
-- [ ] 1-4: _HTML Semântico_
+##### Seção 2: Introdução à HTML & CSS
+
+- [x] 2-1: _HTML & CSS - Estruturas de página_
+- [x] 2-2: _HTML & CSS - Primeiros passos em CSS_
+- [x] 2-3: _HTML & CSS - Seletores e posicionamento_
+- [x] 2-4: _HTML Semântico_
+
+##### Seção 3: Introdução à JavaScript
+
+- [x] 3-1: _Primeiros passos no JavaScript_
+- [ ] 3-2: _Array e estrutura de repetição_
+- [ ] 3-3: _Funções_
+- [ ] 3-4: _Objetos_
+- [ ] 3-5: _JSON_
 
 [etc...]
