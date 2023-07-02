@@ -26,3 +26,13 @@ const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // }
 
 // sum <= 20 ? console.log('O valor da média aritmética é menor ou igual a 20') : console.log('O valor da média aritmética é maior que 20');
+
+//4 - Utilizando for, descubra o maior valor contido no array e imprima-o.
+
+// let bigerNumber = 0;
+
+// for(i = 0; i < numbers.length; i += 1) {
+//   numbers[i] > bigerNumber ? bigerNumber = numbers[i] : bigerNumber;
+// }
+
+// console.log(bigerNumber);
