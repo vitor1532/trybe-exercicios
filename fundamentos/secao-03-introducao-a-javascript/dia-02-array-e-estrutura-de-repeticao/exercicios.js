@@ -1,6 +1,6 @@
 const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-//1 - Percorra o array imprimindo todos os valores contidos nele com a função console.log().
+// 1 - Percorra o array imprimindo todos os valores contidos nele com a função console.log().
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -9,7 +9,7 @@ const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //   console.log(item);
 // }
 
-//2 - Some todos os valores contidos no array e imprima o resultado.
+// 2 - Some todos os valores contidos no array e imprima o resultado.
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -23,7 +23,7 @@ const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-//3 & 4 -Calcule e imprima a média aritmética dos valores contidos no array. A média aritmética é o resultado da soma de todos os elementos dividido pelo número total de elementos. Com base no código que acabou de gerar, referente ao cálculo da média aritmética, faça com que: caso o valor final seja maior que 20, imprima a mensagem “O valor da média aritmética é maior que 20”; e, caso não seja maior que 20, imprima a mensagem “O valor da média aritmética é menor ou igual a 20”.
+// 3 & 4 -Calcule e imprima a média aritmética dos valores contidos no array. A média aritmética é o resultado da soma de todos os elementos dividido pelo número total de elementos. Com base no código que acabou de gerar, referente ao cálculo da média aritmética, faça com que: caso o valor final seja maior que 20, imprima a mensagem “O valor da média aritmética é maior que 20”; e, caso não seja maior que 20, imprima a mensagem “O valor da média aritmética é menor ou igual a 20”.
 
 // let sum = 0;
 
@@ -35,7 +35,7 @@ const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-//5 - Utilizando for, descubra o maior valor contido no array e imprima-o.
+// 5 - Utilizando for, descubra o maior valor contido no array e imprima-o.
 
 // let bigerNumber = 0;
 
@@ -47,7 +47,7 @@ const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-//6 - Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “Nenhum valor ímpar encontrado”.
+// 6 - Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “Nenhum valor ímpar encontrado”.
 
 // let impar = 0;
 
@@ -59,7 +59,7 @@ const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-//Desafio Fatorial - O fatorial é a multiplicação de um número natural pelos seus antecessores, exceto o zero. Por exemplo:
+// Desafio Fatorial - O fatorial é a multiplicação de um número natural pelos seus antecessores, exceto o zero. Por exemplo:
 
 // O fatorial é representado pelo sinal !
 // Exemplo de 4 fatorial:
@@ -74,3 +74,15 @@ const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // }
 
 // console.log(n);
+
+// Desafio de inverter palavra - Utilize a estrutura de repetição for para desenvolver um algoritmo que seja capaz de inverter uma palavra, como a palavra “banana” para “ananab”. Utilize a string abaixo como exemplo. Depois, troque-a por outras para verificar se seu algoritmo está funcionando corretamente.
+
+// let word = 'tryber';
+
+// let letters = word.split('');
+
+// letters = letters.reverse();
+
+// word = letters.join('');
+
+// console.log(word);
