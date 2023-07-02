@@ -75,6 +75,8 @@ const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // console.log(n);
 
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Desafio de inverter palavra - Utilize a estrutura de repetição for para desenvolver um algoritmo que seja capaz de inverter uma palavra, como a palavra “banana” para “ananab”. Utilize a string abaixo como exemplo. Depois, troque-a por outras para verificar se seu algoritmo está funcionando corretamente.
 
 // let word = 'tryber';
@@ -86,3 +88,7 @@ const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // word = letters.join('');
 
 // console.log(word);
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Desafio dos asteriscos - Escreva um algoritmo que, dado um valor n, sendo n > 1, imprima na tela um quadrado feito de asteriscos de tamanho n.
