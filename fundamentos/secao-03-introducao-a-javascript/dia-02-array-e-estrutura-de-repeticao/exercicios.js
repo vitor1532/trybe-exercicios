@@ -109,11 +109,16 @@ const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Desafio da pirâmide de asteriscos - Faça o mesmo algoritmo que antes, mas de modo que imprima um triângulo retângulo.
 
-let n = 5;
+// let n = 5;
 
-let asterisco = '';
+// let asterisco = '';
 
-for(i = 0; i < n; i += 1) {
-    asterisco += '*';
-    console.log(asterisco);
-}
+// for(i = 0; i < n; i += 1) {
+//     asterisco += '*';
+//     console.log(asterisco);
+// }
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Desafio dos asteriscos, parte 2 - Agora, inverta o lado do triângulo.
+
