@@ -122,3 +122,19 @@ const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Desafio dos asteriscos, parte 2 - Agora, inverta o lado do triângulo.
 
+// let n = 5;
+// let linha = '';
+// let position = n - 1;
+
+// for(i = 0; i < n; i += 1) {
+//   for(cIndex = 0; cIndex < n; cIndex += 1) {
+//     if(cIndex < position) {
+//       linha = linha + ' ';
+//     } else {
+//       linha = linha + '*';
+//     }
+//   }
+//   console.log(linha);
+//   linha = '';
+//   position -= 1;
+// }
