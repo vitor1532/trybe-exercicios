@@ -93,17 +93,27 @@ const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Desafio dos asteriscos - Escreva um algoritmo que, dado um valor n, sendo n > 1, imprima na tela um quadrado feito de asteriscos de tamanho n.
 
-// let num1 = 15;
+// let n = 15;
 
 // let asterisco = '';
 
-// for(i = 0; i < num1; i += 1) {
+// for(i = 0; i < n; i += 1) {
 //     asterisco += '*';
 // }
 
-// for(i = 0; i < num1; i += 1) {
+// for(i = 0; i < n; i += 1) {
 //     console.log(asterisco);
 // }
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+// Desafio da pirâmide de asteriscos - Faça o mesmo algoritmo que antes, mas de modo que imprima um triângulo retângulo.
+
+let n = 5;
+
+let asterisco = '';
+
+for(i = 0; i < n; i += 1) {
+    asterisco += '*';
+    console.log(asterisco);
+}
