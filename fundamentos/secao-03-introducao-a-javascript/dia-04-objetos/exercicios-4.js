@@ -21,11 +21,41 @@ const basket = [
 let basketObj = {};
 
 function arrToObj(arr, obj) {
+
+  let msg = `Sua cesta possui: `;
+
   for(let i = 0; i < arr.length; i += 1) {
-    obj[i] = arr[i];
+    let fruta = arr[i];
+
+    if(!obj[fruta]) {
+      obj[fruta] = 1;
+    } else {
+      obj[fruta] += 1;
+    }
   }
+
+  let resultArr = Object.entries(obj);
+
+  arrMsg = [];
+
+  for(let i = 0; i < resultArr.length; i += 1) {
+
+    if(resultArr[i][1] > 1) {
+      arrMsg.push(`${resultArr[i][1]} ${resultArr[i][0]}s`);
+    } else {
+      arrMsg.push(`${resultArr[i][1]} ${resultArr[i][0]}`);
+    }
+    
+  }
+
+  msg += arrMsg.join(' , ');
+
+  return msg;
 }
+console.log(arrToObj(basket, basketObj));
 
-arrToObj(basket, basketObj);
 
-console.log(basketObj);
+// arrToObj(basket, basketObj);
+
+// console.log(basketObj);
+
