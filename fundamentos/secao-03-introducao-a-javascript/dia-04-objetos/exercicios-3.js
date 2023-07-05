@@ -58,3 +58,15 @@ function keyExists(obj, key) {
 console.log(keyExists(school, 'professor'));
 
 // 4 - Crie uma função para alterar o turno para noite no curso de Python. Essa função deve ter três parâmetros: a base de dados a ser modificada, o nome do curso e o novo valor da chave.
+
+function ChangeCourseShift(obj, course, newShift) {
+  for(let i = 0; i < obj.lessons.length; i += 1) {
+    if(obj.lessons[i].course === course) {
+      obj.lessons[i].shift = newShift;
+    }
+  }
+}
+
+ChangeCourseShift(school, 'Python', 'Noite');
+
+// console.log(school.lessons[0]);
