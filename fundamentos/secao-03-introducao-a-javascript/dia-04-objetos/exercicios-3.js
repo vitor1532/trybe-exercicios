@@ -29,9 +29,19 @@ const school = {
 // 1 - Crie uma função que obtenha o valor da chave de acordo com sua posição no array. Essa função deve possuir dois parâmetros: o objeto e a posição no array.
 const getValue = (obj, pos) => Object.values(obj)[pos];
 
-console.log(getValue(school, 0));
+// console.log(getValue(school, 0));
 
 // 2 - Crie uma função que retorne a soma do número total de estudantes em todos os cursos.
+function getTotalStudents(arr) {
+  let total = 0
+  for(let i = 0; i < arr.length; i += 1) {
+    total += arr[i].students;
+  }
+
+  return total;
+};
+
+console.log(getTotalStudents(school.lessons))
 
 // 3 - Crie uma função que verifica se uma determinada chave existe em todos os elementos do array lessons. O retorno deve ser um booleano (true ou false). Essa função deve possuir dois parâmetros: o objeto e o nome da chave.
 
