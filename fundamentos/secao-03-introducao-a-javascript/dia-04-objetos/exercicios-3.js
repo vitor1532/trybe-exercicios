@@ -48,7 +48,7 @@ function getTotalStudents(arr) {
 function keyExists(obj, key) {
   for(let i = 0; i < obj.lessons.length; i += 1) {
     if(obj.lessons[i][key] === undefined) {
-      return bool = false;
+      return false;
     }
   }
 
