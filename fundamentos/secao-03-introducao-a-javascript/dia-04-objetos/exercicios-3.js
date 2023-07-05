@@ -33,7 +33,7 @@ const getValue = (obj, pos) => Object.values(obj)[pos];
 
 // 2 - Crie uma função que retorne a soma do número total de estudantes em todos os cursos.
 function getTotalStudents(arr) {
-  let total = 0
+
   for(let i = 0; i < arr.length; i += 1) {
     total += arr[i].students;
   }
@@ -41,8 +41,20 @@ function getTotalStudents(arr) {
   return total;
 };
 
-console.log(getTotalStudents(school.lessons))
+//console.log(getTotalStudents(school.lessons))
 
 // 3 - Crie uma função que verifica se uma determinada chave existe em todos os elementos do array lessons. O retorno deve ser um booleano (true ou false). Essa função deve possuir dois parâmetros: o objeto e o nome da chave.
+
+function keyExists(obj, key) {
+  for(let i = 0; i < obj.lessons.length; i += 1) {
+    if(obj.lessons[i][key] === undefined) {
+      return bool = false;
+    }
+  }
+
+  return true;
+}
+
+console.log(keyExists(school, 'professor'));
 
 // 4 - Crie uma função para alterar o turno para noite no curso de Python. Essa função deve ter três parâmetros: a base de dados a ser modificada, o nome do curso e o novo valor da chave.
