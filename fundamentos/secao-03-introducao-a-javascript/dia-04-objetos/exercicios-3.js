@@ -27,7 +27,9 @@ const school = {
 };
 
 // 1 - Crie uma função que obtenha o valor da chave de acordo com sua posição no array. Essa função deve possuir dois parâmetros: o objeto e a posição no array.
+const getValue = (obj, pos) => Object.values(obj)[pos];
 
+console.log(getValue(school, 0));
 
 // 2 - Crie uma função que retorne a soma do número total de estudantes em todos os cursos.
 
