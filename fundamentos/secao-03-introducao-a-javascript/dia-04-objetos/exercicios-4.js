@@ -53,9 +53,3 @@ function arrToObj(arr, obj) {
   return msg;
 }
 console.log(arrToObj(basket, basketObj));
-
-
-// arrToObj(basket, basketObj);
-
-// console.log(basketObj);
-
