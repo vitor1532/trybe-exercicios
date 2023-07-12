@@ -25,6 +25,14 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 - [x] 3-2: _Array e estrutura de repetição_
 - [x] 3-3: _Funções_
 - [x] 3-4: _Objetos_
-- [ ] 3-5: _JSON_
+- [x] 3-5: _JSON_
+
+##### Seção 4: JavaScript: DOM, Eventos e Web Storage
+
+- [x] 4-1: _DOM e seletores_
+- [x] 4-2: _Trabalhando com elementos_
+- [ ] 4-3: _Eventos_
+- [ ] 4-4: _Web Storage_
+
 
 [etc...]
