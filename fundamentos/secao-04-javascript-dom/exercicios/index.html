@@ -59,7 +59,7 @@
     <script>
       const body = document.getElementsByTagName('body')[0];
 
-        const createH1 = () => {
+      const createH1 = () => {
         let firstTitle = document.createElement('h1');
 
         firstTitle.innerHTML = 'TrybeTrip - Agência de Viagens';
@@ -68,6 +68,18 @@
       }
 
       createH1();
+
+      const createMain = () => {
+        let main = document.createElement('main');
+
+        main.className = 'main-content';
+
+        body.appendChild(main);
+      }
+
+      createMain();
+
+      
 
     </script>
   </body>
