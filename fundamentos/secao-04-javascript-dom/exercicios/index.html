@@ -91,6 +91,28 @@
 
       createSection();
 
+      const section = document.getElementsByClassName('center-content')[0];
+
+      const createP = () => {
+        let p = document.createElement('p');
+
+        p.innerHTML = "Venha nos conhecer!!"
+
+        section.appendChild(p);
+      }
+
+      createP();
+
+      const createLeft = () => {
+        let left = document.createElement('section');
+
+        left.className = 'left-content';
+
+        main.appendChild(left);
+      }
+
+      createLeft();
+
     </script>
   </body>
 </html>
