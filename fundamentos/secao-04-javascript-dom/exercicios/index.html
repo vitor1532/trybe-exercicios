@@ -91,14 +91,14 @@
 
       createSection();
 
-      const section = document.getElementsByClassName('center-content')[0];
+      const centerContent = document.getElementsByClassName('center-content')[0];
 
       const createP = () => {
         let p = document.createElement('p');
 
         p.innerHTML = "Venha nos conhecer!!"
 
-        section.appendChild(p);
+        centerContent.appendChild(p);
       }
 
       createP();
@@ -170,6 +170,58 @@
       }
 
       addH3();
+
+      const firstTitle = document.getElementsByTagName('h1')[0];
+
+      const addClassTitle = () => {
+        firstTitle.className = 'title';
+      }
+
+      addClassTitle();
+
+      const h3 = document.getElementsByTagName('h3');
+
+      const addDescription = () => {
+        for (let index = 0; index < h3.length; index++) {
+          const element = h3[index];
+
+          element.className += 'description';
+        }
+      }
+
+      addDescription();
+
+      const removeLeft = () => {
+        main.removeChild(leftElement);
+      }
+
+      removeLeft();
+
+      const centralizeRight = () => {
+        rightContent.style.marginRight = 'auto';
+      }
+
+      centralizeRight();
+
+      const changeFatherColor = () => {
+        centerContent.parentElement.style.backgroundColor = 'rgb(0,128,0)'
+      }
+
+      changeFatherColor();
+
+      const ul = document.getElementsByTagName('ul')[0];
+
+      const removeElements = () => {
+        let numbers = document.getElementsByTagName('li');
+        
+        for (let index = 0; index < 2; index += 1) {
+          const element = numbers[index];
+          
+          ul.removeChild(ul.lastElementChild);
+        }
+      }
+
+      removeElements();
 
     </script>
   </body>
