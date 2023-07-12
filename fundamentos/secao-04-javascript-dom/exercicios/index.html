@@ -154,6 +154,23 @@
 
       createUl();
 
+      const addH3 = () => {
+        const nodeList = document.querySelectorAll('section');
+
+        for (let index = 0; index < nodeList.length; index++) {
+          const element = nodeList[index];
+
+          const h3 = document.createElement('h3');
+
+          h3.innerText = `${element.className} Title`;
+
+          element.appendChild(h3);          
+        }
+
+      }
+
+      addH3();
+
     </script>
   </body>
 </html>
