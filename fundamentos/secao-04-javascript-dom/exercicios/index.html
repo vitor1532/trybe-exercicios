@@ -123,6 +123,18 @@
 
       createRight();
 
+      const leftElement = document.getElementsByClassName('left-content')[0];
+
+      const createImg = () => {
+        let img = document.createElement('img');
+
+        img.src = 'https://picsum.photos/200';
+
+        leftElement.appendChild(img);
+      }
+
+      createImg();
+
     </script>
   </body>
 </html>
