@@ -79,7 +79,17 @@
 
       createMain();
 
-      
+      const main = document.getElementsByTagName('main')[0];
+
+      const createSection = () => {
+        let section = document.createElement('section');
+
+        section.className = 'center-content';
+
+        main.appendChild(section);
+      }
+
+      createSection();
 
     </script>
   </body>
