@@ -135,6 +135,25 @@
 
       createImg();
 
+      const rightContent = document.getElementsByClassName('right-content')[0];
+
+      const createUl = () => {
+        const ul = document.createElement('ul');
+
+        rightContent.appendChild(ul);
+
+        const arr = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+        for (let index = 0; index < arr.length; index += 1) {
+          const li = document.createElement('li');
+          li.innerText = arr[index];
+
+          ul.appendChild(li);
+        }
+      }
+
+      createUl();
+
     </script>
   </body>
 </html>
