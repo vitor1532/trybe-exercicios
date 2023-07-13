@@ -31,7 +31,7 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 - [x] 4-1: _DOM e seletores_
 - [x] 4-2: _Trabalhando com elementos_
-- [ ] 4-3: _Eventos_
+- [x] 4-3: _Eventos_
 - [ ] 4-4: _Web Storage_
 
 
