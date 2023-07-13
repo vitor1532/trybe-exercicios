@@ -7,9 +7,24 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 // 1. Copie esse arquivo e edite apenas ele.
 // 1.1. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
+//R: por conta da classe .tech que possui o elemento transform: translate(-20px);
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando este for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como é possível fazer isso? Dica: Lembre-se do método `.classList.remove`.
+
+const changeTech = (event) => {
+  let tech = document.querySelector('.tech');
+  
+  tech.classList.remove('tech');
+  event.target.classList.add('tech');
+};
+
+const li = document.getElementsByTagName('li');
+for (let index = 0; index < li.length; index += 1) {
+  const element = li[index];
+  
+  element.addEventListener('click', changeTech);
+};
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech'.
