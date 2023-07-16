@@ -17,6 +17,7 @@ window.onload = () => {
     let paragraphs = document.querySelectorAll(".paragraph")
     for (let index = 0; index < paragraphs.length; index += 1) {
       paragraphs[index].style.fontSize = size
+      localStorage.setItem('fontSize', paragraphs[index].style.fontSize);
     }
   }
 
