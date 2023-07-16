@@ -8,7 +8,8 @@ window.onload = () => {
   const setFontColor = (color) => {
     let paragraphs = document.querySelectorAll(".paragraph")
     for (let index = 0; index < paragraphs.length; index += 1) {
-      paragraphs[index].style.color = color
+      paragraphs[index].style.color = color;
+      localStorage.setItem('fontColor', paragraphs[index].style.color);
     }
   }
 
