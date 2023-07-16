@@ -25,6 +25,7 @@ window.onload = () => {
     let paragraphs = document.querySelectorAll(".paragraph")
     for (let index = 0; index < paragraphs.length; index += 1) {
       paragraphs[index].style.lineHeight = height
+      localStorage.setItem('lineHeight', paragraphs[index].style.lineHeight);
     }
   }
 
@@ -32,6 +33,7 @@ window.onload = () => {
     let paragraphs = document.querySelectorAll(".paragraph")
     for (let index = 0; index < paragraphs.length; index += 1) {
       paragraphs[index].style.fontFamily = family
+      localStorage.setItem('fontFamily', paragraphs[index].style.fontFamily);
     }
   }
 
