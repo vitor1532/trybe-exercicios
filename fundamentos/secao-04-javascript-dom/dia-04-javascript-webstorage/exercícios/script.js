@@ -76,24 +76,23 @@ window.onload = () => {
       setFontFamily(event.target.innerHTML)
     })
   }
+
+  const load = () => {
+    let backgroundColor = localStorage.getItem('bgColor');
+    if (backgroundColor) {setBackgroundColor(backgroundColor)};
+
+    let fontColor = localStorage.getItem('fontColor');
+    if (fontColor) {setFontColor(fontColor)};
+
+    let fontSize = localStorage.getItem('fontSize');
+    if (fontSize) {setFontSize(fontSize)};
+
+    let lineHeight = localStorage.getItem('lineHeight');
+    if (lineHeight) {setLineHeight(lineHeight)};
+
+    let fontFamily = localStorage.getItem('fontFamily');
+    if (fontFamily) {setFontFamily(fontFamily)};
+  }
+
+  load();
 }
-
-// Exercício 1
-// Armazene a cor de fundo escolhida pela pessoa usuária no navegador.
-
-// Exercício 2
-// Armazene a cor do texto escolhida pela pessoa usuária no navegador.
-
-// Exercício 3
-// Armazene o tamanho da fonte escolhida pela pessoa usuária no navegador.
-
-// Exercício 4
-// Armazene o espaçamento entre as linhas do texto escolhido pela pessoa usuária no navegador.
-
-// Exercício 5
-// Armazene o tipo da fonte (Font family) escolhida pela pessoa usuária no navegador.
-
-// Exercício 6
-// Ao retornar à página, as preferências que foram salvas devem ser mantidas na tela.
-
-// Bônus ⭐️: As propriedades descritas acima são obrigatórias, mas você é livre para adicionar qualquer outra propriedade que julgar válida e que tenha como objetivo melhorar a experiência da pessoa que lê em sua página.
