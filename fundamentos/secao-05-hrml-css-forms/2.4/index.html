@@ -74,12 +74,14 @@
         value="Montanhas"
         required
       />
-      <label for="question">
+      <br>
+      <label for="question" class="form-label">
         Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
         TrybeTravel
       </label>
       <br />
       <textarea
+        class="form-control"
         name="why"
         id="question"
         cols="60"
@@ -88,19 +90,19 @@
         maxlength="500"
       >
       </textarea>
-      <label for="date">Qual a melhor data para realizar sua viagem?</label>
+      <label class="form-label" for="date">Qual a melhor data para realizar sua viagem?</label>
       <input type="date" id="date" />
       <br />
-      <label for="promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe.
+      <label class="form-check-label" for="promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe.
       </label>
-      <input type="checkbox" name="promo" id="promo" />
+      <input class="form-check-input" type="checkbox" name="promo" id="promo" />
       <br />
-      <label for="agreement">Concordo que imagens de minhas férias poderão ser usadas na divulgação de concursos futuros.
+      <label class="form-check-label" for="agreement">Concordo que imagens de minhas férias poderão ser usadas na divulgação de concursos futuros.
       </label>
-      <input type="checkbox" name="agreement" id="agreement" required />
+      <input class="form-check-input" type="checkbox" name="agreement" id="agreement" required />
       </fieldset>
-      <button type="submit" id="submit-btn" disabled>Enviar</button>
-      <button type="reset" id="clear-btn">Limpar</button>
+      <button class="btn btn-success" type="submit" id="submit-btn" disabled>Enviar</button>
+      <button class="btn btn-danger" type="reset" id="clear-btn">Limpar</button>
     </form>
   </body>
 </html>
