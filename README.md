@@ -40,6 +40,6 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 - [x] 5-2: _Bibliotecas JavaScript e Frameworks CSS_
 - [x] 5-3: _CSS Flexbox - Parte 1_
 - [x] 5-4: _CSS Flexbox - Parte 2_
-- [ ] 5-5: _Responsividade_
+- [x] 5-5: _Responsividade_
 
 [etc...]
