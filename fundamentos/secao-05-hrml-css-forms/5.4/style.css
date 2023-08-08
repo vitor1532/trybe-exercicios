@@ -89,3 +89,9 @@ p strong {
     display: block;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .trick {
+    color: white;
+  }
+}
