@@ -25,15 +25,33 @@ header p {
 
 @media screen and (max-width: 991px) {
 /* start of large tablet styles */
+  header p {
+    font-size: 15px;
+    font-weight: 700;
+  }
 
+  .container {
+    background-color: wheat;
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width: 767px) {
 /* start of medium tablet styles */
+  h1 {
+    font-size: 23px;
+    background-color: red;
+  }
 
+  p {
+    color: aqua;
+  }
 }
 
 @media screen and (max-width: 479px) {
 /* start of phone styles */
-
+  .container {
+    display: flex;
+    background-color: brown;
+  }
 }
