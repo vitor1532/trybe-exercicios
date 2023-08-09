@@ -90,3 +90,28 @@ body {
     display: block;
   }
 }
+
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  #aside {
+    display: none;
+  }
+
+    img {
+      max-width: 100%;
+    }
+
+    #navigation {
+      margin-top: 77.6px;
+    }
+
+    #navigation ul {
+      display: block;
+    }
+
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+}
