@@ -10,6 +10,8 @@ html {
   display: flex;
 }
 
+/* TAMANHOS RELATIVOS RETIRADOS DE https://mediag.com/blog/popular-screen-resolutions-designing-for-all/ */
+
 @media screen and (max-width: 991px) {
 /* start of large tablet styles */
 
