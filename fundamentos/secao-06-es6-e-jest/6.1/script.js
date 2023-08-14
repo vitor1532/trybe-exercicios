@@ -12,32 +12,32 @@ const promo = [
   {product: 'bola de basquete', price: 39.99},
 ];
 
-const button = document.querySelector('#send-button');
+// const button = document.querySelector('#send-button');
 
-button.addEventListener('click', () => {
-  const name = document.querySelector('#name-id').value;
-  const number = document.querySelector('#number-id').value;
+// button.addEventListener('click', () => {
+//   const name = document.querySelector('#name-id').value;
+//   const number = document.querySelector('#number-id').value;
 
-  showPromo(name, number);
-});
+//   showPromo(name, number);
+// });
 
-const showPromo = (name, number) => {
-  const firstText = document.querySelector('#text-initial');
-  const secondText = document.querySelector('#text-final');
+// const showPromo = (name, number) => {
+//   const firstText = document.querySelector('#text-initial');
+//   const secondText = document.querySelector('#text-final');
   
-  try {
-    checkName(name);
-    checkNumber(parseInt(number));
-    checkValidRange(parseInt(number));
-    const productObject = checkPromo(number);
+//   try {
+//     checkName(name);
+//     checkNumber(parseInt(number));
+//     checkValidRange(parseInt(number));
+//     const productObject = checkPromo(number);
 
-    firstText.innerHTML = `Boas-vindas, ${name}!`;
-    secondText.innerHTML = `A promoção do dia é: 
-      ${productObject.product} no valor de R$ ${productObject.price}`;
-  } catch(err) {
-    secondText.innerHTML = err.message;
-  }
-}
+//     firstText.innerHTML = `Boas-vindas, ${name}!`;
+//     secondText.innerHTML = `A promoção do dia é: 
+//       ${productObject.product} no valor de R$ ${productObject.price}`;
+//   } catch(err) {
+//     secondText.innerHTML = err.message;
+//   }
+// }
 
 const checkName = (name) => {
   let letters = /[aA-zZ]+/;
@@ -69,3 +69,23 @@ const checkValidRange = (number) => {
     throw new Error('O valor inserido precisa ser um número de 1 a 10');
   }
 }
+
+const avgGrade = (first, second, third, fourth) => {
+  try{ 
+    isNumber(first, second, third, fourth);
+    
+    const avg = (first + second + third + fourth) / 4;
+
+    return `A média das notas é de ${avg}`;
+  } catch (error) {
+    return error.message;
+  }
+};
+
+const isNumber = (first, second, third, fourth) => {
+  if(typeof first !== 'number' || typeof second !== 'number' || typeof third !== 'number' || typeof fourth !== 'number') {
+    throw new Error('O tipo da variável deve ser number');
+  }
+};
+
+console.log(avgGrade(4, 5, 8, 9));
