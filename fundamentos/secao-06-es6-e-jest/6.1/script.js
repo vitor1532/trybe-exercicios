@@ -28,6 +28,7 @@ const showPromo = (name, number) => {
   try {
     checkName(name);
     checkNumber(parseInt(number));
+    checkValidRange(parseInt(number));
     const productObject = checkPromo(number);
 
     firstText.innerHTML = `Boas-vindas, ${name}!`;
@@ -59,5 +60,12 @@ const checkPromo = (number) => {
     if (number - 1 === index) {
       return promo[index];
     }
+  }
+}
+
+// Exercício
+const checkValidRange = (number) => {
+  if (number < 1 || number > 10) {
+    throw new Error('O valor inserido precisa ser um número de 1 a 10');
   }
 }
