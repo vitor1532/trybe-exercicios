@@ -42,4 +42,10 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 - [x] 5-4: _CSS Flexbox - Parte 2_
 - [x] 5-5: _Responsividade_
 
+##### Seção 6: Indrodução à JavaScript ES6 e Testes Unitários
+
+- [ ] 6-1: _Fluxo de exceções_
+- [ ] 6-2: _Primeiros passos em Jest_
+- [ ] 6-3: _Matchers e cobertura de código_
+
 [etc...]
