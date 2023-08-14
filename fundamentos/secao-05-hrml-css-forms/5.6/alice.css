@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+background-color: rgb(78, 78, 78);
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 25px;
+width: 100%;
+}
+
+header p {
+  font-size: 25px;
+}
+
+
+/* TAMANHOS RELATIVOS RETIRADOS DE https://mediag.com/blog/popular-screen-resolutions-designing-for-all/ */
+
+@media screen and (max-width: 991px) {
+/* start of large tablet styles */
+  header p {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .container {
+    background-color: wheat;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+  h1 {
+    font-size: 23px;
+    background-color: red;
+  }
+
+  p {
+    color: aqua;
+  }
+}
+
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+  .container {
+    display: flex;
+    background-color: brown;
+  }
+}
