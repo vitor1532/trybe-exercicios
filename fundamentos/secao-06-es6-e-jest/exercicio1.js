@@ -119,11 +119,26 @@ const findPersonByName = (name) => {
   }  
 };
 
-console.log(findPersonByName('Rafael Ferreira'));
+// console.log(findPersonByName('Rafael Ferreira'));
+
+const isValidPosition = (client) => {
+  if (typeof client === 'undefined') {
+    throw new Error('Posição inválida, tente novamente');
+  }
+}
 
 const findPersonByPosition = (position) => {
   // seu código aqui
+  try {
+    const client = clients[position];
+    isValidPosition(client);
+    return `Cliente: ${client.name}. Email: ${client.email}`;
+  } catch (error) {
+    return error.message;
+  }
 };
+
+// console.log(findPersonByPosition(100));
 
 const findPeopleByState = (state) => {
   // seu código aqui
