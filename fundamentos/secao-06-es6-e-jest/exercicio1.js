@@ -97,7 +97,17 @@ const clients = [
 
 const findPersonByName = (name) => {
   // seu código aqui
+  let client = {};
+  clients.forEach((element) => {
+    if (element.name === name) {
+      client = element;
+    }
+  });
+
+  return `Destinatário: ${client.name}. Endereço: ${client.address.street}, ${client.address.number}, ${client.address.neighborhood}, ${client.address.city} - ${client.address.state}. CEP: ${client.address.cep}`;
 };
+
+findPersonByName('Rafael Ferreira');
 
 const findPersonByPosition = (position) => {
   // seu código aqui
