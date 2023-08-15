@@ -95,19 +95,31 @@ const clients = [
   },
 ];
 
+const personExists = (client) => {
+  if (Object.keys(client).length === 0) {
+    throw new Error('Pessoa não encontrada, tente novamente')
+  }
+}
+
 const findPersonByName = (name) => {
   // seu código aqui
-  let client = {};
-  clients.forEach((element) => {
-    if (element.name === name) {
-      client = element;
-    }
-  });
+  try {
+    let client = {};
+    clients.forEach((element) => {
+      if (element.name === name) {
+        client = element;
+      }
+    });
 
-  return `Destinatário: ${client.name}. Endereço: ${client.address.street}, ${client.address.number}, ${client.address.neighborhood}, ${client.address.city} - ${client.address.state}. CEP: ${client.address.cep}`;
+    personExists(client); // teste
+
+    return `Destinatário: ${client.name}. Endereço: ${client.address.street}, ${client.address.number}, ${client.address.neighborhood}, ${client.address.city} - ${client.address.state}. CEP: ${client.address.cep}`;
+  } catch (error) {
+    return error.message;
+  }  
 };
 
-findPersonByName('Rafael Ferreira');
+console.log(findPersonByName('Rafael Ferreira'));
 
 const findPersonByPosition = (position) => {
   // seu código aqui
