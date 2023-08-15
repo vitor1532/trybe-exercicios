@@ -140,6 +140,28 @@ const findPersonByPosition = (position) => {
 
 // console.log(findPersonByPosition(100));
 
+const stateExsists = (clientsArray) => {
+  if (clientsArray.length === 0) {
+    throw new Error('Ops, nenhuma pessoa mora nesse estado, tente outro');
+  }
+}
+
 const findPeopleByState = (state) => {
   // seu código aqui
+  try {
+    let clientsArray = [];
+    clients.forEach((element) => {
+      if (element.address.state === state) {
+        clientsArray.push(element.name);
+      }
+    });
+    stateExsists(clientsArray);
+  
+    return clientsArray;
+  } catch (error) {
+    return error.message;
+  }
+  
 };
+
+// console.log(findPeopleByState('RJw'));
