@@ -44,7 +44,7 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 ##### Seção 6: Indrodução à JavaScript ES6 e Testes Unitários
 
-- [ ] 6-1: _Fluxo de exceções_
+- [x] 6-1: _Fluxo de exceções_
 - [ ] 6-2: _Primeiros passos em Jest_
 - [ ] 6-3: _Matchers e cobertura de código_
 
