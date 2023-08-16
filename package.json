@@ -1,0 +1,15 @@
+{
+  "name": "trybe-exercicios",
+  "version": "1.0.0",
+  "description": "Este repositório contém todas as atividades de aprendizagem desenvolvidas por Vitor Martins  enquanto estudava na [Trybe](https://www.betrybe.com/) 🚀",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.2"
+  }
+}
