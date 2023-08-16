@@ -8,7 +8,9 @@ const techList = (arr, name) => {
     };
     newArray.push(obj);
   });
-
+  if (arr.length === 0) {
+   return 'Vazio!'; 
+  }
   return newArray;
 }
 
