@@ -9,7 +9,10 @@ describe('Testa função myFizzBuzz', () => {
   });
   it('Caso num seja um número divisível apenas por 5, a função retorna "buzz"', () => {
     expect(myFizzBuzz(10)).toBe('buzz');
-  })
+  });
+  it('Caso num não seja um número, a função retorna false', () => {
+    expect(myFizzBuzz('oi')).toBe(false);
+  });
 });
 
 // describe('testa função multiply', () => {
