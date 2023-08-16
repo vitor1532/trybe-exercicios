@@ -1,4 +1,10 @@
+const myFizzBuzz = require('./myFizzBuzz')
 
+describe('Testa função myFizzBuzz', () => {
+  it('Caso num seja um número divisível por 3 e 5, a função retorna "fizzbuzz".', () => {
+    expect(myFizzBuzz(15)).toBe('fizzbuzz');
+  });
+});
 
 // describe('testa função multiply', () => {
 //   test('retorna multiplicação com números positivos', () => {
