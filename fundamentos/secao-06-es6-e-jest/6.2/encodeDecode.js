@@ -40,4 +40,6 @@ const decode = (string) => {
   return mapString(map, string);
 }
 
+// console.log(typeof encode('aeiou'));
+
 module.exports = { encode , decode };
