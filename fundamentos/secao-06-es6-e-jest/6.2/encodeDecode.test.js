@@ -25,6 +25,9 @@ describe('testa a função encode', () => {
   it('converte a vogal "u" no número 5', () => {
     expect(encode('nu')).toEqual('n5');
   });
+  it('checa se o retorno da função tem o mesmo número de caracteres', () => {
+    expect(encode('trybe').length).toEqual(5);
+  });
 });
 
 describe('testa a função decode', () => {
@@ -51,6 +54,9 @@ describe('testa a função decode', () => {
   });
   it('converte apenas o número 5 na vogal u', () => {
     expect(decode('n5')).toEqual('nu');
+  });
+  it('checa se o retorno da função tem o mesmo número de caracteres', () => {
+    expect(decode('trybe').length).toEqual(5);
   });
 });
 // describe('testa função multiply', () => {
