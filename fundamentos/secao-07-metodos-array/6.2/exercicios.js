@@ -5,10 +5,15 @@ const pokemons = require('./pokemons');
 
 const filterStrongPokemons = pokemons.filter(({ level }) => level > 30);
 
-console.log(filterStrongPokemons);
+// console.log(filterStrongPokemons);
 
 // Exercício 2
 // Utilizando os métodos filter e map encadeados, crie uma função getStrongPokemonNames que retorna um novo array contendo apenas os nomes dos Pokémons com nível superior a 50.
+
+const getStrongPokemonNames = pokemons.filter(({ level }) => level > 50)
+  .map(({ name }) => name);
+
+console.log(getStrongPokemonNames);
 
 
 // Exercício 3
