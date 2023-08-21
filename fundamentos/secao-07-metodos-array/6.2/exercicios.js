@@ -1,0 +1,1 @@
+const pokemons = require('./pokemons');
