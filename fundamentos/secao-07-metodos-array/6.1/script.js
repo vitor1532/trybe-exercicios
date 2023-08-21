@@ -49,9 +49,10 @@ const formatedBookNames = livros.books.map((book) => {
 // A chave author, e o valor deve ser o nome da pessoa autora;
 // A chave age, e o valor deve ser a idade da pessoa autora quando lançou o livro.
 
-const nameAndAge = livros.books.map(({ author, releaseYear }) => {
+const nameAndAge = livros.books.map(({ author : { name, birthYear }, releaseYear }) => {
   let obj = {
-    author: author.name,
+    author: name,
+    birthYear,
     releaseYear,
   }
 
