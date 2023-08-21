@@ -46,6 +46,13 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 - [x] 6-1: _Fluxo de exceções_
 - [x] 6-2: _Primeiros passos em Jest_
-- [ ] 6-3: _Matchers e cobertura de código_
+- [x] 6-3: _Matchers e cobertura de código_
+
+##### Seção 7: Métodos de Array
+
+- [ ] 7-1: _Map_
+- [ ] 7-2: _Filter e Sort_
+- [ ] 7-3: _Find e Foreach_
+- [ ] 7-4: _Reduce_
 
 [etc...]
