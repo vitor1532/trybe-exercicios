@@ -13,11 +13,15 @@ const filterStrongPokemons = pokemons.filter(({ level }) => level > 30);
 const getStrongPokemonNames = pokemons.filter(({ level }) => level > 50)
   .map(({ name }) => name);
 
-console.log(getStrongPokemonNames);
+// console.log(getStrongPokemonNames);
 
 
 // Exercício 3
 // Utilize o método sort para ordenar o array de Pokémons em ordem crescente com base no nível de cada Pokémon.
+
+const sortedByLevel = pokemons.sort((a, b) => a.level - b.level);
+
+console.log(sortedByLevel);
 
 // Exercício 4
 // Utilizando o método sort e default destructuring, crie uma função chamada sortPokemons que retorna o array de Pokémons ordenado por nível em ordem decrescente. Caso dois Pokémons tenham o mesmo nível, a ordenação deve ser feita pelo nome em ordem alfabética crescente.
