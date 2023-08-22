@@ -52,7 +52,7 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 - [x] 7-1: _Map_
 - [x] 7-2: _Filter e Sort_
-- [ ] 7-3: _Find e Foreach_
+- [x] 7-3: _Find e Foreach_
 - [ ] 7-4: _Reduce_
 
 [etc...]
