@@ -23,16 +23,12 @@ const sum = numbers.reduce((acc, current) => acc + current, 0);
 //   { name: 'Wilson', course: 'Português' },
 // ]
 
+const best = (acc, current) => acc.grade > current.grade ? acc : current;
+
 const report = (students) => students.map((student) => {
   return {
     name: student.name,
-    course: student.courses.reduce((acc, current) => {
-      if (acc.grade > current.grade) {
-        return acc;
-      } else {
-        return current;
-      }
-    }).name
+    course: student.courses.reduce(best).name
   }
 });
 
