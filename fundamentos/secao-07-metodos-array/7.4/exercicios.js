@@ -32,6 +32,17 @@ const longestName = () => {
 // Exercício 3
 // 🚀 Crie uma função chamada totalAreaByRegion que recebe um parâmetro opcional region com o valor padrão ‘Europe’. Essa função calcula e retorna a área total de todos os países de uma determinada região.
 
+const totalAreaByRegion = (region = 'Europe') => {
+  return countries.reduce((acc, current) => {
+    if (current.region === region) {
+      return acc + current.area;
+    }
+    return acc;
+  }, 0);
+}
+
+// console.log(totalAreaByRegion());
+
 // Exercício 4
 // 🚀 Crie uma função chamada getLargestCountriesByRegion que retorna um objeto contendo os países com a maior área em cada região. O objeto de retorno deve ter a seguinte estrutura:
 
