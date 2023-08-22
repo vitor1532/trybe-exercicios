@@ -40,4 +40,19 @@ const createObj = () => {
   return newArray;
 }
 
-console.log(createObj());
+// console.log(createObj());
+
+// Exercício 3
+// Escreva uma função chamada findCountry que recebe dois parâmetros: o array de países e o nome do país desejado. Ao receber esses valores, a função deve retornar o elemento do país desejado. Caso não seja encontrado, a função deve lançar um erro com a mensagem: “País não encontrado!”.
+
+const findCountry = (arr, name) => {
+  const found = arr.find((country) => country.name === name);
+
+  if (found) {
+    return found;
+  } else {
+    return 'País não encontrado'
+  }
+};
+
+console.log(findCountry(countries, 'South Africa'));
