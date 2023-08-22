@@ -51,3 +51,19 @@ const totalAreaByRegion = (region = 'Europe') => {
 //   Europe: { name: 'Russia', area: 17098242 },
 //   // ...
 // }
+
+const getLargestCountriesByRegion = () => {
+  const result = countries.reduce((acc, current) => {
+    if (!acc[current.region] || acc[current.region].area < current.area) {
+      acc[current.region] = {
+        name: current.name,
+        area: current.area,
+      }
+    }
+    return acc;
+  }, {})
+
+  return result;
+};
+
+console.log(getLargestCountriesByRegion());
