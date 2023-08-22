@@ -29,4 +29,14 @@ const contacts = [
   { name: 'Beatriz', phone: '456789123' }
 ];
 
-const searchContact = (contacts, name) => {};
+const searchContact = (contacts, name) => {
+  const contato = contacts.find((contact) => contact.name === name)
+
+  if (contato) {
+    return contato;
+  } else {
+    return 'contato não encontrado';
+  }
+};
+
+console.log(searchContact(contacts, 'Maria'));
