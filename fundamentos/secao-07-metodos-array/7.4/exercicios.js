@@ -22,6 +22,13 @@ const getPopulation = countries.reduce((acc, current) => acc + current.populatio
 //   population: 55197,
 //   area: 199
 // };
+
+const longestName = () => {
+  return countries.reduce((acc, current) => acc.name.length > current.name.length ? acc : current);
+}
+
+// console.log(longestName());
+
 // Exercício 3
 // 🚀 Crie uma função chamada totalAreaByRegion que recebe um parâmetro opcional region com o valor padrão ‘Europe’. Essa função calcula e retorna a área total de todos os países de uma determinada região.
 
